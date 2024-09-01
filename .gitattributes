@@ -1,0 +1,4 @@
+Dockerfile merge=false
+Jenkinsfile merge=false
+docker-compose.yml merge=false
+
