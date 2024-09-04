@@ -58,7 +58,7 @@ const lastNews = [
   }
 ]
 
-const hometitle = 'Unsere Leistungen'
+const hometitle = 'Über uns'
 const homedescription =
   'Um Wasserschäden vorzubeugen, sollten die Dachrinnen regelmäßig gereinigt und das Dach auf Schäden überprüft werden. Die Kosten der Dachrinnenreinigung können auch auf die Mieter umgelegt werden, wenn beispielsweise regelmäßige Reinigungsintervalle aufgrund des Baumbestandes notwendig sind.'
 

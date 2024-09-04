@@ -9,9 +9,11 @@ const nextConfig = {
       'localhost',
       '51.83.16.208',
       'api-staging.conect4youth.com'
-    ]
+    ],
+    unoptimized: true
   },
-  typescript: { ignoreBuildErrors: true }
+  typescript: { ignoreBuildErrors: true },
+  output: 'export'
 }
 
 module.exports = nextConfig

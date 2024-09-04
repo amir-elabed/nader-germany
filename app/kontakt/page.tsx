@@ -163,8 +163,13 @@ export default function Home() {
                     component={'h3'}
                     sx={{ color: '#05264A', fontSize: '22px', fontWeight: 'bold', pb: '1rem', fontFamily: 'Poppins' }}
                   >
-                    Kontaktdaten
+                    Kontaktformular
                   </Typography>
+                  <Typography sx={{ marginBottom: '1rem' }}>
+                    Haben Sie Fragen, oder möchten Sie einen Termin mit uns vereinbaren? Dann rufen Sie uns gerne an,
+                    oder schreiben Sie uns eine Nachricht über unser Kontaktformular.
+                  </Typography>
+
                   <Box sx={{ display: 'flex', justifyContent: 'space-between' }}>
                     <Typography className='contact_name'>
                       Adresse: <span> Dorstener Straße 20144809 Bochum</span>

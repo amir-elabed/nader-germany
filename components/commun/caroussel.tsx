@@ -14,7 +14,7 @@ export default function Caroussel(props: any) {
     slidesToShow: 4,
     slidesToScroll: 1,
     // arrows: true,
-    infinite: false,
+    infinite: true,
     responsive: [
       {
         breakpoint: 1500,

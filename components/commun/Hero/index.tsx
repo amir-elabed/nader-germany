@@ -8,10 +8,25 @@ const Hero = ({ image }: any) => {
     <Box
       className='hero'
       sx={{
-        backgroundImage: 'url("/image/weiss.jpg")'
+        backgroundImage: 'url("/image/weiss.jpg")',
+        backgroundSize: 'cover', // Ensures the background image covers the entire box
+        backgroundPosition: 'center', // Centers the image within the box
+        height: '100vh', // Full viewport height
+        position: 'relative' // Ensures the container can be positioned inside
       }}
     >
-      <Container fixed maxWidth={'xl'}>
+      <Container
+        fixed
+        maxWidth={'xl'}
+        sx={{
+          position: 'absolute',
+          bottom: '10%', // Positions the container at the bottom of the box
+          left: '40%',
+          transform: 'translateX(-50%)', // Centers the container horizontally
+          textAlign: 'center', // Centers the text inside the container
+          paddingBottom: '20px' // Adds some space below the text
+        }}
+      >
         <Typography
           component='h1'
           sx={{ p: '0 !important', m: '0 !important' }}

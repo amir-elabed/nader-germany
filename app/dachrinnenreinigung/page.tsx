@@ -10,8 +10,19 @@ import Link from 'next/link'
 import { useGetHomePageQuery } from '@/services/api/HomePageAPI'
 
 const hometitle = 'Dachrinnenreinigung'
-const homedescription =
-  'Vom Eigenheim bis hin zum Großprojekt sind wir Ihr professioneller Ansprechpartner rund um das Thema Regenrinnenreinigung. Egal ob es sich um eine einmalige Maßnahme, oder auch um regelmäßige Reinigungsintervalle handelt – wir unterstützen Sie fachmännisch bei der Reinigung Ihrer Dachrinnen.'
+const homedescription = `Eine Dachreinigung bewirkt nicht nur einen optisch gepflegten Eindruck, sondern verlängert auch die Lebensdauer der Dachfläche erheblich.
+
+Moos, Flechten, Schmutz und Algen halten die Feuchtigkeit, wodurch Ihr Dach dauerhaft feucht bleibt.
+
+Moos kann Ihr Dach so beschädigen, dass Feuchtigkeit in die Dachpfannen eindringt. Beim nächsten Frost können die Dachpfannen zerstört werden. Für einen gepflegten Eindruck ist eine Dachreinigung eine optimale Lösung.
+
+Mögliche Reinigungsarten:
+
+- Besen
+- Drahtbürste
+- Hochdruckreiniger
+
+Da es unterschiedliche Möglichkeiten der Dachreinigung gibt und kein Dach wie das andere ist, besichtigen wir Ihr Dach und machen Ihnen ein Angebot.`
 
 const projects = [
   {
@@ -83,9 +94,14 @@ export default function Dachrinnenreinigung() {
               sx={{ marginInline: 'auto' }}
             >
               <Typography className='homedescription__title' dangerouslySetInnerHTML={{ __html: hometitle }} />
-              <Typography
+              {/* <Typography
                 className='homedescription__description'
                 dangerouslySetInnerHTML={{ __html: homedescription }}
+              /> */}
+              <Typography
+                component='div'
+                dangerouslySetInnerHTML={{ __html: homedescription.replace(/\n/g, '<br/>') }}
+                sx={{ whiteSpace: 'pre-wrap' }} // Ensures that the line breaks are respected
               />
             </Box>
           </Container>

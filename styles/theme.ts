@@ -76,7 +76,7 @@ theme = createTheme({
             //contact
             '& .banner__title': {
               color: '#031326',
-              fontSize: '35px',
+              fontSize: '30px',
               fontFamily: 'Poppins',
               fontWeight: 'bold',
               padding: '4rem 0'
@@ -234,14 +234,16 @@ theme = createTheme({
               },
 
               '&__title': {
-                fontSize: '56px',
-                fontWeight: '700',
-                fontFamily: fontPrimary,
+                fontSize: '80px',
+                fontFamily: 'Nerko One, cursive',
+                fontWeight: 400,
+                fontStyle: 'normal',
                 display: 'flex',
                 alignItems: 'center',
                 width: '100%',
                 gap: '4rem',
                 marginBottom: '1rem',
+                color: '#203959',
 
                 [theme.breakpoints.down('lg')]: {
                   fontSize: '3.375rem',
@@ -641,8 +643,7 @@ theme = createTheme({
                 color: '#FFFFFF',
                 display: 'flex',
                 alignItems: 'center',
-                justifyContent: 'center',
-                
+                justifyContent: 'center'
               },
               '&__container': {
                 backgroundColor: '#1D1D1D',

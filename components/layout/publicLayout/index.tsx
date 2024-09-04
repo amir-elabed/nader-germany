@@ -113,11 +113,47 @@ const PublicLayout = ({ children }: any) => {
           <Box
             className='logo'
             sx={{
-              '& img': { maxWidth: 9999, height: 60, width: 'auto', display: 'block' }
+              '& img': {
+                maxWidth: 9999,
+                height: 60,
+                width: 'auto',
+                display: 'block'
+              }
             }}
           >
             <Link href={'/'}>
-              <Image src='/image/logo2.jpg' width={100} height={100} alt={'logo'} />
+              <Box
+                sx={{
+                  display: 'flex',
+                  flexDirection: 'row',
+                  alignItems: 'center',
+                  justifyContent: { xs: 'right', sm: 'start' }
+                }}
+              >
+                <Image
+                  src='/image/logo2.jpg'
+                  width={100} // Increase the width
+                  height={100} // Increase the height
+                  alt={'logo'}
+                  style={{ width: '45%', height: 'auto' }}
+                />
+                <Typography
+                  component='div'
+                  sx={{
+                    textAlign: 'center',
+                    // display: 'flex',
+                    alignItems: 'center',
+                    fontFamily: 'Nerko One,cursive',
+                    fontWeight: 400,
+                    fontStyle: 'normal',
+                    fontSize: '1.25rem',
+                    color: '#203959',
+                    display: { xs: 'none', sm: 'flex' }
+                  }}
+                >
+                  Seit 2018
+                </Typography>
+              </Box>
             </Link>
           </Box>
           <Box className='navbarPublic__nav' sx={{ display: { lg: 'block', xs: 'none' } }}>
@@ -133,7 +169,7 @@ const PublicLayout = ({ children }: any) => {
                       '& *': {
                         color: '#05264A'
                       },
-                      ':hover *': { color: '#0C5BB0' }
+                      ':hover *': { color: '#64B2E1' }
                     }}
                   >
                     {/* <InfoOutlinedIcon sx={{ marginBlock: '0.5rem' }} /> */}
@@ -161,7 +197,7 @@ const PublicLayout = ({ children }: any) => {
                       '& *': {
                         color: '#05264A'
                       },
-                      ':hover *': { color: '#0C5BB0' }
+                      ':hover *': { color: '#64B2E1' }
                     }}
                   >
                     <Typography
@@ -188,7 +224,7 @@ const PublicLayout = ({ children }: any) => {
                       '& *': {
                         color: '#05264A'
                       },
-                      ':hover *': { color: '#0C5BB0' }
+                      ':hover *': { color: '#64B2E1' }
                     }}
                   >
                     <Typography
@@ -215,7 +251,7 @@ const PublicLayout = ({ children }: any) => {
                       '& *': {
                         color: '#05264A'
                       },
-                      ':hover *': { color: '#0C5BB0' }
+                      ':hover *': { color: '#64B2E1' }
                     }}
                   >
                     <Typography
@@ -243,7 +279,7 @@ const PublicLayout = ({ children }: any) => {
                       '& *': {
                         color: '#05264A'
                       },
-                      ':hover *': { color: '#0C5BB0' }
+                      ':hover *': { color: '#64B2E1' }
                     }}
                   >
                     <Typography

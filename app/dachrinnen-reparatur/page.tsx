@@ -10,8 +10,9 @@ import Link from 'next/link'
 import { useGetHomePageQuery } from '@/services/api/HomePageAPI'
 
 const hometitle = 'Dachrinnen Reparatur'
-const homedescription =
-  'Vom Eigenheim bis hin zum Großprojekt sind wir Ihr professioneller Ansprechpartner rund um das Thema Regenrinnenreinigung. Egal ob es sich um eine einmalige Maßnahme, oder auch um regelmäßige Reinigungsintervalle handelt – wir unterstützen Sie fachmännisch bei der Reinigung Ihrer Dachrinnen.'
+const description = `Ihre Dachrinnen sind undicht? Können Sie nachts wegen nerviger Tropfgeräusche auf Ihre Terrassenüberdachung nicht schlafen? Ihre Kunden werden auf dem Weg zur Ladentür von einem feinen Wasserstrahl “geduscht”? Ursache hierfür sind meist unfachmännische oder auch altersschwache Lötnähte. Sprechen Sie uns einfach an! Wir bieten Ihnen hochwertige und kostengünstige Möglichkeiten zur Dachrinnenabdichtung an.
+
+Nehmen Sie einfach Kontakt mit uns auf.`
 
 const projects = [
   {
@@ -79,8 +80,9 @@ export default function DachrinnenReparatur() {
             >
               <Typography className='homedescription__title' dangerouslySetInnerHTML={{ __html: hometitle }} />
               <Typography
-                className='homedescription__description'
-                dangerouslySetInnerHTML={{ __html: homedescription }}
+                component='div'
+                dangerouslySetInnerHTML={{ __html: description.replace(/\n/g, '<br/>') }}
+                sx={{ whiteSpace: 'pre-wrap' }}
               />
             </Box>
           </Container>

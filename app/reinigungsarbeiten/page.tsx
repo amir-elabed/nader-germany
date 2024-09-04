@@ -14,16 +14,21 @@ const homedescriptionDach =
   'Vom Eigenheim bis hin zum Großprojekt sind wir Ihr professioneller Ansprechpartner rund um das Thema Regenrinnenreinigung. Egal ob es sich um eine einmalige Maßnahme, oder auch um regelmäßige Reinigungsintervalle handelt – wir unterstützen Sie fachmännisch bei der Reinigung Ihrer Dachrinnen.'
 
 const hometitlePhoto = 'Photovoltaik reinigung'
-const homedescriptionPhoto =
-  'Vom Eigenheim bis hin zum Großprojekt sind wir Ihr professioneller Ansprechpartner rund um das Thema Regenrinnenreinigung. Egal ob es sich um eine einmalige Maßnahme, oder auch um regelmäßige Reinigungsintervalle handelt – wir unterstützen Sie fachmännisch bei der Reinigung Ihrer Dachrinnen.'
+const descriptionPhoto = `Photovoltaik Module bringen ihren besten Ertrag unter optimalen Bedingungen – das ist soweit bekannt. Da der Selbstreinigungseffekt in der Praxis nicht immer perfekt funktioniert, sollten Verschmutzungen regelmäßig durch eine Photovoltaik Reinigung entfernt werden.
+
+Verschmutzungen auf den Photovoltaik Modulen wirken wie Verschattungen. Sie mindern den Ertrag der Photovoltaikanlage. Je nach Stärke der Verschmutzung kann diese Ertragsminderung zwischen 10 und 20 Prozent ausmachen.
+
+Darüber hinaus führen Verschmutzungen an den Rändern der PV-Anlage zu einem erhöhten Reparatur- und Instandhaltungsbedarf.
+
+Die regelmäßige Photovoltaik Reinigung trägt entscheidend dazu bei, den Ertrag der Photovoltaikanlage zu erhalten. Damit ist eine Solarreinigung regelmäßig wirtschaftlich sinnvoll und Wert steigernd.`
 
 const hometitleTerra = 'Terrassendach reinigung'
-const homedescriptionTerra =
-  'Vom Eigenheim bis hin zum Großprojekt sind wir Ihr professioneller Ansprechpartner rund um das Thema Regenrinnenreinigung. Egal ob es sich um eine einmalige Maßnahme, oder auch um regelmäßige Reinigungsintervalle handelt – wir unterstützen Sie fachmännisch bei der Reinigung Ihrer Dachrinnen.'
+const descriptionTerra = `Genießen Sie Ihren Wintergarten oder ihre Überdachung in Dithmarschen in vollen Zügen mit unserem professionellen Terrassenüberdachungsreinigungsservice!
+
+Wir bringen Ihren Außenbereich wieder zum Strahlen, entfernen hartnäckigen Schmutz und sorgen für eine makellose Überdachung. Vertrauen Sie auf unsere Expertise und lassen Sie uns für klare Sicht und strahlenden Glanz sorgen, damit Sie Ihre Zeit im Freien uneingeschränkt genießen können. Kontaktieren Sie uns noch heute für ein sauberes und gepflegtes Erlebnis!`
 
 const hometitleVelux = 'Velux-dachfenster reinigung'
-const homedescriptionVelux =
-  'Vom Eigenheim bis hin zum Großprojekt sind wir Ihr professioneller Ansprechpartner rund um das Thema Regenrinnenreinigung. Egal ob es sich um eine einmalige Maßnahme, oder auch um regelmäßige Reinigungsintervalle handelt – wir unterstützen Sie fachmännisch bei der Reinigung Ihrer Dachrinnen.'
+const descriptionVelux = `Wir reinigen gerne Ihre Velux fenster von außen damit die Sonne kann wieder Ihnen scheinen.`
 
 const projects = [
   {
@@ -109,7 +114,7 @@ export default function Reinigungsarbeiten() {
               className='banner__title'
               sx={{
                 color: '#031326',
-                fontSize: '35px',
+                fontSize: '30px',
                 fontFamily: 'Poppins',
                 fontWeight: 'bold',
                 padding: '4rem 0'
@@ -121,7 +126,7 @@ export default function Reinigungsarbeiten() {
         </Box>
         <Box className='homedescription'>
           <Container maxWidth='lg' fixed>
-            <Box
+            {/* <Box
               display='flex'
               alignItems='center'
               flexDirection='column'
@@ -134,7 +139,7 @@ export default function Reinigungsarbeiten() {
                 className='homedescription__description'
                 dangerouslySetInnerHTML={{ __html: homedescriptionDach }}
               />
-            </Box>
+            </Box> */}
             <Box
               display='flex'
               alignItems='center'
@@ -145,8 +150,9 @@ export default function Reinigungsarbeiten() {
             >
               <Typography className='homedescription__title' dangerouslySetInnerHTML={{ __html: hometitlePhoto }} />
               <Typography
-                className='homedescription__description'
-                dangerouslySetInnerHTML={{ __html: homedescriptionPhoto }}
+                component='div'
+                dangerouslySetInnerHTML={{ __html: descriptionPhoto.replace(/\n/g, '<br/>') }}
+                sx={{ whiteSpace: 'pre-wrap', marginBottom: '5rem' }}
               />
             </Box>
             <Box
@@ -159,8 +165,9 @@ export default function Reinigungsarbeiten() {
             >
               <Typography className='homedescription__title' dangerouslySetInnerHTML={{ __html: hometitleTerra }} />
               <Typography
-                className='homedescription__description'
-                dangerouslySetInnerHTML={{ __html: homedescriptionTerra }}
+                component='div'
+                dangerouslySetInnerHTML={{ __html: descriptionTerra.replace(/\n/g, '<br/>') }}
+                sx={{ whiteSpace: 'pre-wrap', marginBottom: '5rem' }}
               />
             </Box>
             <Box
@@ -173,8 +180,9 @@ export default function Reinigungsarbeiten() {
             >
               <Typography className='homedescription__title' dangerouslySetInnerHTML={{ __html: hometitleVelux }} />
               <Typography
-                className='homedescription__description'
-                dangerouslySetInnerHTML={{ __html: homedescriptionVelux }}
+                component='div'
+                dangerouslySetInnerHTML={{ __html: descriptionVelux.replace(/\n/g, '<br/>') }}
+                sx={{ whiteSpace: 'pre-wrap' }}
               />
             </Box>
           </Container>

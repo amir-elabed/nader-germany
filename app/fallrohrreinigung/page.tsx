@@ -10,9 +10,11 @@ import Link from 'next/link'
 import { useGetHomePageQuery } from '@/services/api/HomePageAPI'
 
 const hometitle = 'Fallrohrreinigung'
-const homedescription =
-  'Sind die Fallrohre erst einmal verstopft, können in der Folge auch die Dachrinnen ihren Zweck nicht mehr erfüllen. Läuft das Regenwasser wasserfallartig aus Ihren Dachrinnen heraus, können Sie meist von einer Rohrverstopfung ausgehen. Profitieren Sie von unserer langjährigen Erfahrung auf dem Gebiet der Rohrreinigung. Wir bieten Ihnen gerne unsere professionelle und schnelle Unterstüzung an!'
+const description = `Verstopfungsbeseitigungen von Dachentwässerungssystemen
 
+ist eine unserer Leistungen, die häufig durch das Unterlassen der regelmäßigen Dachrinnenreinigung zum Tragen kommt, z.B. durch Silvesterraketen, Äste und sonstigen Hausmüll. Hierbei entstehen Verstopfungen vom Dachrinnenablauf über das Regenfallrohr bis hin zur Grundleitung. Diese Probleme beseitigen wir mit unserer elektromechanischen Rohrreinigungsfräse. Mit der Spirale und Wasser wird durch die Reinigungsklappe unten am Standrohr die Verstopfung in der Grundleitung, ggf. bis zum nächsten Kontroll- oder Reinigungsschacht frei gefräst und beseitigt.
+
+Für eine schnelle Beseitigung einer Verstopfung in Ihrer Regenwasserleitung, nehmen Sie einfach Kontakt mit uns auf.`
 const projects = [
   {
     image: '/image/fallrohrreinigung1.jpg',
@@ -89,8 +91,9 @@ export default function Fallrohrreinigung() {
             >
               <Typography className='homedescription__title' dangerouslySetInnerHTML={{ __html: hometitle }} />
               <Typography
-                className='homedescription__description'
-                dangerouslySetInnerHTML={{ __html: homedescription }}
+                component='div'
+                dangerouslySetInnerHTML={{ __html: description.replace(/\n/g, '<br/>') }}
+                sx={{ whiteSpace: 'pre-wrap' }} // Ensures that the line breaks are respected
               />
             </Box>
           </Container>

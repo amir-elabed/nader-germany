@@ -39,6 +39,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           href='https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap'
           rel='stylesheet'
         />
+        <link
+          href='https://fonts.googleapis.com/css2?family=Nerko+One&family=Playwrite+CU:wght@100..400&display=swap'
+          rel='stylesheet'
+        ></link>
       </head>
       <body className={inter.className} style={{ paddingTop: paddingTopValue }}>
         <CssBaseline />
