@@ -107,7 +107,7 @@ function Footer({}: any) {
             <Box className='footer__wrapper-section'>
               <Box className='footer__wrapper-typo'>
                 <MapPin />
-                <Typography>Dorstener Straße 20144809 Bochum</Typography>
+                <Typography>Robertstraße 79 A 44809 Bochum</Typography>
               </Box>
               <Box className='footer__wrapper-typo'>
                 <Phone />
@@ -118,6 +118,16 @@ function Footer({}: any) {
                 <Typography>bbsexpress7@gmail.com</Typography>
               </Box>
             </Box>
+
+            <Box className='footer__wrapper-section'>
+              <Box className='footer__wrapper-typo'>
+                <Typography>Gemäß § 19 Abs. 1 Umsatzsteuergesetz wird keine Umsatzsteuer erhoben</Typography>
+              </Box>
+              <Box className='footer__wrapper-typo'>
+                <Typography>Finanzamt Bochum Mitte, St.-Nr.: 306/5000/7071</Typography>
+              </Box>
+            </Box>
+
             {/* <Box className='footer__wrapper-section'>
             <Typography>Um sich uns anzuschließen, klicken Sie unten auf die Schaltfläche 'Kontakt'.</Typography>
             <Box sx={{ textAlign: 'center', alignItems: 'center' }}>
@@ -142,7 +152,7 @@ function Footer({}: any) {
               </Link>
             </Box>
           </Box> */}
-            <Box
+            {/* <Box
               className='logo'
               sx={{
                 '& img': { maxWidth: 9999, height: 60, width: 'auto', display: 'block' }
@@ -151,7 +161,16 @@ function Footer({}: any) {
               <Link href={'/'}>
                 <img src='/image/logo2-removebg.png' width={100} height={100} alt={'logo'} />
               </Link>
+            </Box> */}
+
+            {/* <Box className='footer__wrapper-typo'>
+              <Mail />
+              <Typography>Gemäß § 19 Abs. 1 Umsatzsteuergesetz wird keine Umsatzsteuer erhoben</Typography>
             </Box>
+            <Box className='footer__wrapper-typo'>
+              <Mail />
+              <Typography>Finanzamt Bochum Mitte, St.-Nr.: 306/5000/7071</Typography>
+            </Box> */}
           </Box>
           <Box className='footer__copyrightpublic'>
             <Typography sx={{ fontSize: '0.8rem' }}>{settings}</Typography>

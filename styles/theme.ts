@@ -251,12 +251,12 @@ theme = createTheme({
                 },
 
                 [theme.breakpoints.down('md')]: {
-                  fontSize: '2.25rem',
+                  fontSize: '3.5rem',
                   gap: '2rem'
                 },
 
                 [theme.breakpoints.down('sm')]: {
-                  fontSize: '1.5rem',
+                  fontSize: '3.5rem',
                   gap: '0.75rem'
                 },
 
@@ -611,6 +611,22 @@ theme = createTheme({
               marginLeft: 'initial'
             },
 
+            // Price
+            '& .price': {
+              display: 'flex',
+              justifyContent: 'center',
+              alignItems: 'center',
+              [theme.breakpoints.down('md')]: {
+                display: 'block'
+              },
+              '&__section': {
+                flex: 2
+              },
+              '&__sectionLeft': {
+                flex: 1
+              }
+            },
+
             //Footer
 
             '& .logo-fb path': { fill: '#0A4E96' },
@@ -655,7 +671,11 @@ theme = createTheme({
                 display: 'flex',
                 justifyContent: 'center',
                 alignItems: 'center',
-                margin: '0.5rem 10rem'
+                margin: '0.5rem 10rem',
+                [theme.breakpoints.down('md')]: {
+                  display: 'block',
+                  margin: '0'
+                }
               },
               '&__wrapper-right': {
                 flex: '1',
@@ -665,7 +685,10 @@ theme = createTheme({
                 // textAlign: 'center'
                 flexDirection: 'column',
                 gap: '0.75rem',
-                marginLeft: '10rem'
+                marginLeft: '10rem',
+                [theme.breakpoints.down('md')]: {
+                  margin: '0'
+                }
               },
               '&__wrapper-section': {
                 flex: '1',
@@ -674,8 +697,11 @@ theme = createTheme({
                 // alignItems: 'center',
                 // textAlign: 'center',
                 flexDirection: 'column',
-                gap: '0.75rem'
-                // marginLeft: '10rem'
+                gap: '0.75rem',
+                marginLeft: '10rem',
+                [theme.breakpoints.down('md')]: {
+                  margin: '0'
+                }
               },
               '&__wrapper-typo': {
                 display: 'flex',

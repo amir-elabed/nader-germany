@@ -10,8 +10,19 @@ import Link from 'next/link'
 import { useGetHomePageQuery } from '@/services/api/HomePageAPI'
 
 const hometitleDach = 'Dach reinigung'
-const homedescriptionDach =
-  'Vom Eigenheim bis hin zum Großprojekt sind wir Ihr professioneller Ansprechpartner rund um das Thema Regenrinnenreinigung. Egal ob es sich um eine einmalige Maßnahme, oder auch um regelmäßige Reinigungsintervalle handelt – wir unterstützen Sie fachmännisch bei der Reinigung Ihrer Dachrinnen.'
+const homedescriptionDach = `Eine Dachreinigung bewirkt nicht nur einen optisch gepflegten Eindruck, sondern verlängert auch die Lebensdauer der Dachfläche erheblich.
+
+Moos, Flechten, Schmutz und Algen halten die Feuchtigkeit, wodurch Ihr Dach dauerhaft feucht bleibt.
+
+Moos kann Ihr Dach so beschädigen, dass Feuchtigkeit in die Dachpfannen eindringt. Beim nächsten Frost können die Dachpfannen zerstört werden. Für einen gepflegten Eindruck ist eine Dachreinigung eine optimale Lösung.
+
+Mögliche Reinigungsarten:
+
+- Besen
+- Drahtbürste
+- Hochdruckreiniger
+
+Da es unterschiedliche Möglichkeiten der Dachreinigung gibt und kein Dach wie das andere ist, besichtigen wir Ihr Dach und machen Ihnen ein Angebot.`
 
 const hometitlePhoto = 'Photovoltaik reinigung'
 const descriptionPhoto = `Photovoltaik Module bringen ihren besten Ertrag unter optimalen Bedingungen – das ist soweit bekannt. Da der Selbstreinigungseffekt in der Praxis nicht immer perfekt funktioniert, sollten Verschmutzungen regelmäßig durch eine Photovoltaik Reinigung entfernt werden.
@@ -126,7 +137,7 @@ export default function Reinigungsarbeiten() {
         </Box>
         <Box className='homedescription'>
           <Container maxWidth='lg' fixed>
-            {/* <Box
+            <Box
               display='flex'
               alignItems='center'
               flexDirection='column'
@@ -136,10 +147,11 @@ export default function Reinigungsarbeiten() {
             >
               <Typography className='homedescription__title' dangerouslySetInnerHTML={{ __html: hometitleDach }} />
               <Typography
-                className='homedescription__description'
-                dangerouslySetInnerHTML={{ __html: homedescriptionDach }}
+                component='div'
+                dangerouslySetInnerHTML={{ __html: homedescriptionDach.replace(/\n/g, '<br/>') }}
+                sx={{ whiteSpace: 'pre-wrap', marginBottom: '5rem' }}
               />
-            </Box> */}
+            </Box>
             <Box
               display='flex'
               alignItems='center'

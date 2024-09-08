@@ -10,19 +10,19 @@ import Link from 'next/link'
 import { useGetHomePageQuery } from '@/services/api/HomePageAPI'
 
 const hometitle = 'Dachrinnenreinigung'
-const homedescription = `Eine Dachreinigung bewirkt nicht nur einen optisch gepflegten Eindruck, sondern verlängert auch die Lebensdauer der Dachfläche erheblich.
+const homedescription = `Eine regelmäßige Dachrinnenreinigung verhindert Fallrohrverstopfungen und die daraus entstehenden Folgeschäden an der Dachkonstruktion und Hausfassade durch überlaufendes Regenwasser.
 
-Moos, Flechten, Schmutz und Algen halten die Feuchtigkeit, wodurch Ihr Dach dauerhaft feucht bleibt.
+Wir übernehmen auch komplizierte Aufträge in großer Höhe, dort wo Gerüste oder Hebebühnen nicht einsetzbar sind. Wir können mit unserer Sicherungstechnik durch Seilgeschirr und Spezialleitern in jeden Winkel vordringen. Mit Hebebühnen, Steiger bzw. Hubwagen erledigen wir auch Aufträge bei denen das Betreten des Daches nicht gewünscht oder möglich ist. Wir kontrollieren auf Wunsch bei der Dachrinnenreinigung auch die Fallrohre auf Verstopfungen, die Regenrinnen auf Leckagen und das Dach auf Schäden.
 
-Moos kann Ihr Dach so beschädigen, dass Feuchtigkeit in die Dachpfannen eindringt. Beim nächsten Frost können die Dachpfannen zerstört werden. Für einen gepflegten Eindruck ist eine Dachreinigung eine optimale Lösung.
+Zeitnahe Bearbeitung Ihrer Aufträge, Sauberkeit und ein sorgsamer Umgang mit Ihrer Immobilie ist für uns selbstverständlich.
 
-Mögliche Reinigungsarten:
+Nach dem reinigung es werden fotos gemacht und geschikt von der saubere dachrime damit konnen sie auch sehen unsere saubere arbeit.
 
-- Besen
-- Drahtbürste
-- Hochdruckreiniger
+Wussten Sie schon? Zusätzlich bieten wir Ihnen einen Wartungsvertrag an, bei dem wir Ihre Regenrinnen, an den von Ihnen vorgegebenen Intervallen reinigen. Bei Abschluss eines Wartungsvertrages über eine Dachrinnenreinigung oder Dachreinigung gewähren wir 10% Rabatt auf den lfd. Meterpreis. 
 
-Da es unterschiedliche Möglichkeiten der Dachreinigung gibt und kein Dach wie das andere ist, besichtigen wir Ihr Dach und machen Ihnen ein Angebot.`
+Kontaktieren Sie uns gerne .
+
+Möchten Sie eine angebot erhalten oder  haben Sie Fragen ?  schreiben Sie uns gerne eine Nachricht über unsere Kontaktformular.`
 
 const projects = [
   {

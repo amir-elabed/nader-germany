@@ -2,6 +2,7 @@ import { useGetHomePageQuery } from '@/services/api/HomePageAPI'
 import { Typography } from '@mui/material'
 import Box from '@mui/material/Box'
 import Container from '@mui/material/Container'
+import Image from 'next/image'
 
 const Hero = ({ image }: any) => {
   return (
@@ -9,8 +10,9 @@ const Hero = ({ image }: any) => {
       className='hero'
       sx={{
         backgroundImage: 'url("/image/weiss.jpg")',
-        backgroundSize: 'cover', // Ensures the background image covers the entire box
-        backgroundPosition: 'center', // Centers the image within the box
+        backgroundAttachment: 'scroll!important',
+
+        backgroundPosition: '50% 50%', // Centers the image within the box
         height: '100vh', // Full viewport height
         position: 'relative' // Ensures the container can be positioned inside
       }}
@@ -25,14 +27,22 @@ const Hero = ({ image }: any) => {
           transform: 'translateX(-50%)', // Centers the container horizontally
           textAlign: 'center', // Centers the text inside the container
           paddingBottom: '20px' // Adds some space below the text
+          // width: '50%'
         }}
       >
-        <Typography
+        {/* <Typography
           component='h1'
           sx={{ p: '0 !important', m: '0 !important' }}
           className='hero__title'
           dangerouslySetInnerHTML={{ __html: 'BBS EXPRESS' }}
-        />
+        /> */}
+        {/* <Image
+          src='/image/plan1.png'
+          width={300}
+          height={150}
+          // style={{ width: '25%', height: 'auto' }}
+          alt='banner_logo'
+        /> */}
       </Container>
     </Box>
   )

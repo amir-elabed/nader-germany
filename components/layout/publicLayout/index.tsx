@@ -30,6 +30,7 @@ const pages = [
   { name: 'Fallrohrreinigung', path: '/fallrohrreinigung' },
   { name: 'Dachrinnen Reparatur', path: '/dachrinnen-reparatur' },
   { name: 'Reinigungsarbeiten', path: '/reinigungsarbeiten' },
+  { name: 'Preis', path: '/preis' },
   { name: 'Kontakt', path: '/kontakt' }
 ]
 
@@ -135,9 +136,9 @@ const PublicLayout = ({ children }: any) => {
                   width={100} // Increase the width
                   height={100} // Increase the height
                   alt={'logo'}
-                  style={{ width: '45%', height: 'auto' }}
+                  style={{ width: '65%', height: 'auto' }}
                 />
-                <Typography
+                {/* <Typography
                   component='div'
                   sx={{
                     textAlign: 'center',
@@ -152,7 +153,7 @@ const PublicLayout = ({ children }: any) => {
                   }}
                 >
                   Seit 2018
-                </Typography>
+                </Typography> */}
               </Box>
             </Link>
           </Box>
@@ -269,6 +270,34 @@ const PublicLayout = ({ children }: any) => {
                   </Box>
                 </Link>
 
+                <Link href='/preis'>
+                  <Box
+                    sx={{
+                      marginRight: '16px',
+                      display: 'flex',
+                      flexDirection: 'column',
+                      alignItems: 'center',
+                      '& *': {
+                        color: '#05264A'
+                      },
+                      ':hover *': { color: '#64B2E1' }
+                    }}
+                  >
+                    <Typography
+                      variant='overline'
+                      sx={{
+                        marginTop: '-5px',
+                        cursor: 'pointer',
+                        fontWeight: '800',
+                        fontSize: '0.8rem',
+                        textTransform: 'none'
+                      }}
+                    >
+                      Preis
+                    </Typography>
+                  </Box>
+                </Link>
+
                 <Link href='/kontakt'>
                   <Box
                     sx={{
@@ -294,6 +323,28 @@ const PublicLayout = ({ children }: any) => {
                     >
                       Kontakt
                     </Typography>
+                  </Box>
+                </Link>
+                <Link href='/'>
+                  <Box
+                    sx={{
+                      marginRight: '16px',
+                      display: 'flex',
+                      flexDirection: 'column',
+                      alignItems: 'center',
+                      '& *': {
+                        color: '#05264A'
+                      },
+                      ':hover *': { color: '#64B2E1' }
+                    }}
+                  >
+                    <Image
+                      src='/image/seit.png'
+                      width={100}
+                      height={100}
+                      // style={{ width: '25%', height: 'auto' }}
+                      alt='banner_logo'
+                    />
                   </Box>
                 </Link>
               </Box>

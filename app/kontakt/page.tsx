@@ -13,7 +13,7 @@ import emailjs from '@emailjs/browser'
 export default function Home() {
   const [formData, setFormData] = useState({
     from_name: '',
-    email: '',
+    to_name: '',
     message: ''
   })
 
@@ -32,12 +32,12 @@ export default function Home() {
     e.preventDefault()
 
     // Replace with your own EmailJS service ID, template ID, and user ID
-    const serviceID = 'service_6w43h1a'
-    const templateID = 'template_dklfq2z'
+    const serviceID = 'service_rux13ec'
+    const templateID = 'template_ffiiab6'
 
     emailjs
       .sendForm(serviceID, templateID, form.current, {
-        publicKey: '0E-qJYvNDiqhtcWPm'
+        publicKey: '8h2UhpnN_SkeID6RR'
       })
       .then(
         () => {
@@ -98,12 +98,12 @@ export default function Home() {
                         fullWidth
                         size='medium'
                         variant='outlined'
-                        name='email'
+                        name='to_name'
                         margin='dense'
                         type='text'
-                        id='email'
+                        id='to_name'
                         placeholder='Email'
-                        value={formData.email}
+                        value={formData.to_name}
                         onChange={handleChange}
                       />
                     </Box>
@@ -172,7 +172,7 @@ export default function Home() {
 
                   <Box sx={{ display: 'flex', justifyContent: 'space-between' }}>
                     <Typography className='contact_name'>
-                      Adresse: <span> Dorstener Straße 20144809 Bochum</span>
+                      Adresse: <span> Robertstraße 79 A 44809 Bochum</span>
                     </Typography>
                     <Typography className='contact_name'>
                       Email: <span> bbsexpress7@gmail.com</span>
@@ -192,7 +192,7 @@ export default function Home() {
                       style={{ border: '0' }}
                     ></iframe> */}
                     <iframe
-                      src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.751988716711!2d7.187518776879481!3d51.517765909945666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b8e125330e6987%3A0xcd9514fd1356b3a4!2sDorstener%20Str.%2C%20Allemagne!5e0!3m2!1sfr!2stn!4v1725112303236!5m2!1sfr!2stn'
+                      src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.975994866211!2d7.2047987!3d51.495307999999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b8e050189d0859%3A0x7636327b2f487fc4!2sRobertstra%C3%9Fe%2079A%2C%2044809%20Bochum%2C%20Allemagne!5e0!3m2!1sfr!2stn!4v1725550615516!5m2!1sfr!2stn'
                       height='400'
                       style={{ border: '0' }}
                     ></iframe>
