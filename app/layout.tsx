@@ -43,6 +43,19 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           href='https://fonts.googleapis.com/css2?family=Nerko+One&family=Playwrite+CU:wght@100..400&display=swap'
           rel='stylesheet'
         ></link>
+        <title>Dachrinnenreinigung-bbsexpress</title>
+        <meta
+          name='description'
+          content='Dachrinnenreinigungen sind unverzichtbar,  um Ihr Haus vor Feuchtigkeitsschäden im Mauerwerk sowie Schimmel im Gebäude zu schützen. Ich helfe Ihnen gerne weiter und reinige Ihre Dachrinnen professionell und gründlich. Sollten Sie dazu Fragen haben, zögern Sie nicht und melden sich gerne per Mail oder Telefon. Ich erstelle Ihnen auch gerne ein Angebot und beantworte Ihre Rückfragen.'
+        />
+        <meta
+          property='og:description'
+          content='Dachrinnenreinigungen sind unverzichtbar,  um Ihr Haus vor Feuchtigkeitsschäden im Mauerwerk sowie Schimmel im Gebäude zu schützen. Ich helfe Ihnen gerne weiter und reinige Ihre Dachrinnen professionell und gründlich. Sollten Sie dazu Fragen haben, zögern Sie nicht und melden sich gerne per Mail oder Telefon. Ich erstelle Ihnen auch gerne ein Angebot und beantworte Ihre Rückfragen.'
+        />
+        <meta
+          name='twitter:description'
+          content='Dachrinnenreinigungen sind unverzichtbar,  um Ihr Haus vor Feuchtigkeitsschäden im Mauerwerk sowie Schimmel im Gebäude zu schützen. Ich helfe Ihnen gerne weiter und reinige Ihre Dachrinnen professionell und gründlich. Sollten Sie dazu Fragen haben, zögern Sie nicht und melden sich gerne per Mail oder Telefon. Ich erstelle Ihnen auch gerne ein Angebot und beantworte Ihre Rückfragen.'
+        />
       </head>
       <body className={inter.className} style={{ paddingTop: paddingTopValue }}>
         <CssBaseline />

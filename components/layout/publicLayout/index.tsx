@@ -30,7 +30,7 @@ const pages = [
   { name: 'Fallrohrreinigung', path: '/fallrohrreinigung' },
   { name: 'Dachrinnen Reparatur', path: '/dachrinnen-reparatur' },
   { name: 'Reinigungsarbeiten', path: '/reinigungsarbeiten' },
-  { name: 'Preis', path: '/preis' },
+  { name: 'Preise', path: '/preise' },
   { name: 'Kontakt', path: '/kontakt' }
 ]
 
@@ -270,7 +270,7 @@ const PublicLayout = ({ children }: any) => {
                   </Box>
                 </Link>
 
-                <Link href='/preis'>
+                <Link href='/preise'>
                   <Box
                     sx={{
                       marginRight: '16px',
@@ -293,7 +293,7 @@ const PublicLayout = ({ children }: any) => {
                         textTransform: 'none'
                       }}
                     >
-                      Preis
+                      Preise
                     </Typography>
                   </Box>
                 </Link>

@@ -60,15 +60,14 @@ Seilklettertechnik 75,00€ bis 150,00€.`
 
 const description2 = `
 Fallrohrreinigung pro stück 5,99€.
-verstopft abflussrohr 25,00€ bis 39,00€.
-verstopft abflussrohr 25,00€ bis 50,00€.
+Reinigung von  verstopften Fallrohren ab 25,00€ , je nach Aufwand.
 Verstpoft Grundleitungsreinigung  50,00€ bis 100,00€.`
 
 const description3 = `
 Verstpoft Grundleitungsreinigung  50,00€ bis 100,00€.`
 
 const description4 = `
-Abdichtung von Dachrinnen  15,00€ bis  35,00€.`
+Abdichtung von Dachrinnen  15,00€ bis  50,00€.`
 
 const description5 = `
 Dach Reinigung : 10,00 € pro m² bis 20,00 EUR pro m².
@@ -78,7 +77,7 @@ const description6 = `
 Reinigung pro Solar-module  5,00€.`
 
 const description7 = `
-reinigung von Terrassendach  [ nach anfrage ].`
+Reinigung von Terrassendächern auf Anfrage.`
 
 export default function Preis() {
   return (
@@ -107,7 +106,7 @@ export default function Preis() {
                 padding: '4rem 0'
               }}
             >
-              Preis
+              Preise
             </Typography>
           </Container>
         </Box>
@@ -209,6 +208,20 @@ export default function Preis() {
                 }}
               >
                 Mindestauftragswert : 99,00 €.
+              </Typography>
+            </Box>
+            <Box className='price'>
+              <Typography
+                sx={{
+                  color: 'red', // Set the text color to red
+                  textDecoration: 'underline', // Underline the text
+                  fontWeight: 'bold', // Make the text bold
+                  fontSize: '1rem',
+                  marginTop: '2rem'
+                }}
+              >
+                Ab einer Dachrinnenhöhe von 5m wird ein Höhenzuschlag, je nach Aufwand, zwischen 50,00 €
+                und 80,00 € fällig.
               </Typography>
             </Box>
             <Box className='price' sx={{ marginTop: '5rem' }}>

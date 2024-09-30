@@ -59,8 +59,10 @@ const lastNews = [
 ]
 
 const hometitle = 'Über uns'
-const homedescription =
-  'Um Wasserschäden vorzubeugen, sollten die Dachrinnen regelmäßig gereinigt und das Dach auf Schäden überprüft werden. Die Kosten der Dachrinnenreinigung können auch auf die Mieter umgelegt werden, wenn beispielsweise regelmäßige Reinigungsintervalle aufgrund des Baumbestandes notwendig sind.'
+const homedescription = `
+Zuverlässig und gründlich - ich erledige Ihre Dachrinnenreinigung   sowie kleinere Reparaturen für Sie. 
+
+Ich bin ein motivierter Jungunternehmer der  seit 2018 im Bereich der Dachrinnenreinigung, kleineren Reparaturen rund ums Dach und der Säuberung von Dächern etc. tätig ist. Regelmäßige Dachrinnenreinigungen sind unverzichtbar,  um Ihr Haus vor Feuchtigkeitsschäden im Mauerwerk sowie Schimmel im Gebäude zu schützen. Ich helfe Ihnen gerne weiter und reinige Ihre Dachrinnen professionell und gründlich. Sollten Sie dazu Fragen haben, zögern Sie nicht und melden sich gerne per Mail oder Telefon. Ich erstelle Ihnen auch gerne ein Angebot und beantworte Ihre Rückfragen.`
 
 export default function Home() {
   return (
@@ -83,8 +85,20 @@ export default function Home() {
 
               <Typography
                 className='homedescription__description'
-                dangerouslySetInnerHTML={{ __html: homedescription }}
+                dangerouslySetInnerHTML={{ __html: homedescription.replace(/\n/g, '<br/>') }}
               />
+
+              <Typography
+                sx={{
+                  color: 'red', // Set the text color to red
+                  textDecoration: 'underline', // Underline the text
+                  fontWeight: 'bold', // Make the text bold
+                  fontSize: '1rem',
+                  marginTop: '2.5rem'
+                }}
+              >
+                Einsatzgebiet im Umkreis von bis zu 40 km Rund um Bochum oder auf Anfrage.
+              </Typography>
             </Box>
             <Grid container mt={4} columnSpacing={8} spacing={3}>
               {cardData.map((data, index) => (
